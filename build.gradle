@@ -1,9 +1,8 @@
 plugins {
+    id 'java'
     id 'org.springframework.boot' version '2.7.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 }
-
-apply plugin: 'java'
-apply plugin: 'io.spring.dependency-management'
 
 group = 'org.moderd'
 version = '0.0.1-SNAPSHOT'
