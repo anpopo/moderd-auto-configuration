@@ -21,7 +21,6 @@ public class ModerdAutoConfiguration {
 
     public ModerdAutoConfiguration(ModerdProperties moderdProperties,
         BeanFactory beanFactory) {
-        System.setProperty("java.runtime.version", "17");
         this.moderdProperties = moderdProperties;
         this.beanFactory = beanFactory;
     }

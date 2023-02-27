@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '3.0.3'
+    id 'org.springframework.boot' version '2.7.0'
 }
 
 apply plugin: 'java'
@@ -7,7 +7,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'org.moderd'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '11'
 
 configurations {
     compileOnly {
