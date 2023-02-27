@@ -30,9 +30,9 @@ public class ModerdAutoConfiguration {
     @ConditionalOnMissingBean
     public ModelContainer modelContainer() {
         String basePackage = moderdProperties.getBasePackage() == null
-            ? System.getProperty(ModerdConfigParams.BASE_PACKAGE)
-            : beanFactory.getBean(EnableModelScan.class).scanFrom();
-
+            ? beanFactory.getBean(EnableModelScan.class).scanFrom()
+            : System.getProperty(ModerdConfigParams.BASE_PACKAGE);
+        
         InitializingExecutor executor = new InitializingExecutor(basePackage);
         return executor.getModelContainer();
     }
