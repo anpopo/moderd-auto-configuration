@@ -16,13 +16,21 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    implementation 'com.github.anpopo:moderd:a72d06da05'
+    implementation 'com.github.anpopo:moderd:45e780e027'
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+test {
+    useJUnitPlatform()
 }
 
 tasks {
-    bootJar { mainClass = "NONE" }
-}
-jar {
-    enabled = false
+    bootJar {
+        mainClass = "NONE"
+        enabled = false
+    }
+
+    jar {
+        enabled = false
+    }
 }
 

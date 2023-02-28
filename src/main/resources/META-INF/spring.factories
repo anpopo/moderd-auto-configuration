@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  dev.donghyeon.autoconfiguration.ModerdAutoConfiguration
+  org.moderd.moderdspringautoconfigure.ModerdAutoConfiguration
