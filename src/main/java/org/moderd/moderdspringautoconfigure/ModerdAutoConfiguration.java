@@ -1,10 +1,7 @@
 package org.moderd.moderdspringautoconfigure;
 
-import java.util.Objects;
 import org.moderd.core.InitializingExecutor;
 import org.moderd.core.ModelContainer;
-import org.moderd.core.annotation.EnableModelScan;
-import org.springframework.beans.factory.BeanFactory;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
